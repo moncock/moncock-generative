@@ -4,7 +4,7 @@ from pprint import pprint as pp
 from PIL import Image, ImageColor
 import random
 
-img_dir  = '../gen-sample/{}.png'
+img_dir  = '../gen-sample/assets/{}.png' # TODO
 
 def save_img(chars, target_path, resize=False):
     for idx, cc in enumerate(chars):
