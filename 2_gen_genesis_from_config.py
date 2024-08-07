@@ -3,7 +3,7 @@ from config import config
 from pprint import pprint as pp
 
 # collection config
-total_supply = 100
+total_supply = 1_000
 
 # common
 def shuffle_data(data, times=99):
@@ -26,24 +26,15 @@ for cfg in config:
         info.append(qty)
 
 # adjust trait qty
-#config[0][1][3] -= 1 # left wing cyborg
-#config[0][6][3] -= 1 # left wing robot
-#config[1][1][3] -= 1 # leg cyborg
-#config[1][6][3] -= 1 # leg robot
-#config[2][1][3] += 1 # eye big
-#config[2][2][3] += 1 # eye big cute
-#config[2][3][3] += 1 # eye big smile
-#config[2][9][3] += 1 # eye funny
-#config[3][1][3] -= 1 # body cyborg
-#config[3][6][3] -= 1 # body robot
-#config[4][5][3] += 1 # feather red
-#config[5][1][3] -= 1 # right wing cyborg
-#config[5][6][3] -= 1 # right wing robot
-#config[6][1][3] -= 1 # tail cyborg
-#config[6][6][3] -= 1 # tail robot
-#config[7][0][3] += 1 # ambient blank
-#config[8][1][3] += 1 # bg grass
-#config[8][3][3] += 1 # bg ocean
+config[0][0][3] -= 2
+config[0][1][3] -= 2
+config[0][2][3] -= 2
+config[0][3][3] -= 2
+config[2][0][3] += 2
+config[2][1][3] += 2
+config[2][2][3] += 2
+config[2][3][3] += 2
+config[4][0][3] -= 1
 #pp(config)
 
 # check each trait supply
