@@ -6,8 +6,8 @@ from meta import *
 #pp(sorted(set([ x for xs in genesis for x in xs ])))
 #exit()
 
-json_dir = '../gen-sample/json/{}.json' # TODO
-ipfs_url = 'ipfs://xxxxx/{}.png'        # TODO
+json_dir = '../sample-1000/docs/json/{}.json'                       # TODO
+ipfs_url = 'https://moncock.github.io/sample-1000/assets/{}.png'    # TODO
 
 # save json
 for (idx, info) in enumerate(genesis):

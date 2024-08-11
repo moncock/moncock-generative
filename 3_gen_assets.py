@@ -2,17 +2,17 @@ from config import config
 from genesis import genesis
 from pprint import pprint as pp
 from PIL import Image, ImageColor
-import random
+# import random
 
-img_dir  = '../gen-sample/assets/{}.png' # TODO
+img_dir  = '../sample-1000/docs/assets/{}.png' # TODO
 
 def save_img(chars, target_path, resize=False):
     for idx, cc in enumerate(chars):
         layers = [ Image.open(src) for src in cc ]
         # create random bgcolor image
-        hue = random.randint(0, 360)
-        bg_color = ImageColor.getrgb('hsl({},100%,70%)'.format(hue)) # 70% brightness
-        # bg_color = (255, 255, 255, 255) # white
+        # hue = random.randint(0, 360)
+        # bg_color = ImageColor.getrgb('hsl({},100%,70%)'.format(hue)) # 70% brightness
+        bg_color = (255, 255, 255, 255) # white
         new_img = Image.new("RGBA", layers[0].size, bg_color)
         # overlay layers
         for layer in layers:
